@@ -1,0 +1,85 @@
+.header
+    display: flex
+    &__logo
+        width: 67px
+        height: 67px
+        img
+            width: 80px
+            height: 80px
+    &__menu
+        display: flex
+        justify-content: space-between
+        list-style-type: none
+        margin-left: 69px
+        padding-left: 0
+        &_item
+            margin-right: 53px
+            &:last-child
+                margin-right: 0
+        &_link
+            color: #222225
+            font-size: 12px
+            font-weight: 700
+            font-family: Montserrat
+            text-transform: uppercase
+            text-decoration: none
+            transition: 0.4s all
+            &::after
+                content: ''
+                display: block
+                width: 0%
+                height: 3px
+                background-color: #e1e1e1
+                transition: 0.4s all
+                margin-top: 9px
+            &:hover
+                color: #8ca144
+                &::after
+                    width: 17px
+    &__contacts
+        margin-left: 104px
+        margin-top: 9px
+        display: flex
+        justify-content: space-around
+    &__nav
+        display: flex
+    &__round
+        width: 38px
+        height: 37px
+        border: 1px solid #8ca144
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+    &__call
+        display: flex
+        flex-wrap: wrap
+        margin-left: 22px
+    &__address
+        width: 146px
+        color: #28282b
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 500
+        margin-left: 6px
+        line-height: 18px
+    &__phone
+        color: #28282b
+        font-family: Montserrat
+        font-size: 15px
+        font-weight: 600
+        text-decoration: none
+        width: 151px
+    &__feedback
+        margin-left: 6px
+        max-width: 151px
+        display: flex
+        flex-wrap: wrap
+        text-align: left
+    &__backcall
+        color: #8ca144
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 500
+        text-decoration: underline
+        margin-top: -17px

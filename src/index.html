@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Традиционная Китайская медицина</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    <div>
-        111
-    </div>
+    <section class="promo">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="icons/logo.png" alt="logo">
+                </a>
+                <!-- <nav> -->
+                <ul class="header__menu">
+                    <li class="header__menu_item">
+                        <a href="#" class="header__menu_link">Лечение</a>
+                    </li>
+                    <li class="header__menu_item">
+                        <a href="#" class="header__menu_link">Доктора</a>
+                    </li>
+                    <li class="header__menu_item">
+                        <a href="#" class="header__menu_link">Цены</a>
+                    </li>
+                    <li class="header__menu_item">
+                        <a href="#" class="header__menu_link">Отзывы</a>
+                    </li>
+                    <li class="header__menu_item">
+                        <a href="#" class="header__menu_link">Контакты</a>
+                    </li>
+                </ul>
+                <!-- </nav> -->
+                <!--  Блок с контактами -->
+                <div class="header__contacts">
+                    <!-- Адрес -->
+                    <div class="header__nav">
+                        <div class="header__round">
+                            <img src="icons/location.png" alt="location" class="header__geo">
+                        </div>
+                        <div class="header__address">г. Шымкент,<br>ул. Ж. Шанина 82/12</div>
+                    </div>
+                    <!-- Телефон -->
+                    <div class="header__call">
+                        <div class="header__round">
+                            <img src="icons/phone.png" alt="phone" class="header__tel">
+                        </div>
+                        <div class="header__feedback">
+                            <a href="tel:77024803925" class="header__phone">+7 (702) 480-39-25</a>
+                            <a href="" class="header__backcall">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="promo__wrapper">
+                <div class="promo__text">
+                    <h1 class="promo__title">Традиционная китайская<br> медицина в Шымкенте</h1>
+                    <h2 class="promo__subtitle">Диагностика и лечение заболеваний традиционными<br>китайскими методами.
+                        Специалисты клиники — врачи<br><span class="sub">высшей категории</span> с опытом работы до
+                        <span class="sub">35 лет</span></h2>
+                </div>
+                <div class="promo__doctor_wrapper"></div>
+                    <img src="img/header/doctor.png" alt="doctor" class="promo__doctor">
+                </div>
+                <button class="button">записаться на приём</button>
+            </div>
+    </section>
 </body>
+
 </html>
