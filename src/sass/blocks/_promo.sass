@@ -1,6 +1,18 @@
 .promo
-    padding: 20px 0 60px 0
-    min-height: 925px
+    padding: 20px 40px
+    min-height: 820px
+    background: url(../../img/header/main_bg.png) center (center / cover) no-repeat
+    
+    /** Добавить при адаптации больших экранов **/
+    &::before
+        content: ""
+        position: absolute
+        display: none
+        right: 435px
+        top: 258px
+        width: 361px
+        height: 308px
+        background: url(../../img/header/leaves_left.jpg)
     &__wrapper
         position: relative
         width: 100%
@@ -8,8 +20,11 @@
         display: flex
     &__doctor
         position: absolute
-        z-index: -1
+        z-index: 1
         right: 0
+        top: 30px
+        max-width: 604px
+        min-height: 775px
         &_wrapper
             &::before
                 content: ""
@@ -23,10 +38,13 @@
             &::after
                 content: ""
                 position: absolute
+                top: 722px
+                right: 21px
                 display: block
-                width: 146px
-                height: 179px
-                background: url(../../img/header/leaves_down.png)
+                width: 134px
+                height: 167px
+                background: url(../../img/header/leaves_right.png)
+                z-index: 2
     &__text
         position: relative
         text-align: left

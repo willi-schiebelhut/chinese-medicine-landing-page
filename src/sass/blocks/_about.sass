@@ -1,0 +1,99 @@
+h2,h3,h4
+    margin: 0
+    padding: 0
+.about
+    padding: 116px 40px 0 40px
+    min-height: 1004px
+    position: relative
+    background: url(../../img/section_2/about_bg.png) center (center / cover) no-repeat
+    
+    &::before
+        content: ""
+        position: absolute
+        left: -120px
+        bottom: -148px
+        display: block
+        width: 437px
+        height: 409px
+        background: url(../../img/section_2/rock.png) center (center / cover) no-repeat
+        z-index: 1
+    &__caption
+        margin-top: 55px
+        margin-bottom: 43px
+        color: #000000
+        font-family: Montserrat
+        font-size: 22px
+        font-weight: 700
+        line-height: 24px
+        text-align: center
+    &__wrapper
+        width: 100%
+        max-height: 450px
+        display: flex
+        justify-content: space-between
+        margin-top: 115px
+    &__item
+        max-width: 370px
+        min-height: 382px
+        border-radius: 20px
+        background-color: #ffffff
+        margin-right: 30px
+        border: 1px solid rgba(192, 192, 192, 0.2)
+        position: relative
+        &:hover
+            box-shadow: 0px 15px 15px 0px rgba(23, 29, 26, 0.1)
+        &:nth-child(1)
+            padding: 60px 45px 0 29px
+        &:nth-child(2)
+            padding: 60px 55px  0 28px
+        &:nth-child(3)
+            padding: 60px 31px  0 27px 
+            margin-right: 0
+    &__round
+        width: 123px
+        height: 123px
+        border: 10px solid #f7f6eb
+        border-radius: 100%
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translate(-50%,-50%)
+        background-color: #fff
+    &__icons
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+    &__descr
+        color: #000000
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 400
+        line-height: 22px
+        margin-top: 20px
+        text-align: left
+        &_bold
+            font-family: Montserrat
+            font-weight: 700
+    &__number
+        position: absolute
+        top: -90px
+        left: 50%
+        right: 50%
+        transform: translateX(-50%)
+        color: #f5f4e9
+        font-family: Montserrat
+        font-size: 209px
+        font-weight: 700
+        line-height: 252.78px
+        display: flex
+        justify-content: center
+        z-index: 1
+
+.button
+    &_center
+        display: block
+        margin: 70px auto
+
+
+
