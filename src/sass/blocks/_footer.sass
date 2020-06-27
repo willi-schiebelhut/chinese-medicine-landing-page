@@ -1,0 +1,84 @@
+.footer
+    min-height: 200px
+    background-color: #1a1818
+    padding: 33px 0 60px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__menu
+        display: flex
+        justify-content: space-between
+        list-style-type: none
+        margin-left: -69px
+        padding-left: 0
+        margin-bottom: 40px
+        &_item
+            margin-right: 53px
+            &:last-child
+                margin-right: 0
+        &_link
+            color: #ffffff
+            font-size: 12px
+            font-weight: 700
+            font-family: Montserrat
+            text-transform: uppercase
+            text-decoration: none
+            transition: 0.4s all
+            &::after
+                content: ''
+                display: block
+                width: 0%
+                height: 3px
+                background-color: #e1e1e1
+                transition: 0.4s all
+                margin-top: 9px
+            &:hover
+                color: #8ca144
+                &::after
+                    width: 17px
+    &__nav
+        display: flex
+        align-items: center
+        margin-top: 15px
+    &__call
+        display: flex
+        align-items: center
+    &__backcall
+        display: block
+        color: #8ca144
+        font-family: Montserrat
+        font-size: 12px
+        font-weight: 500
+        text-decoration: underline
+        margin-top: 6px
+    &__round
+        width: 37px
+        height: 38px
+        position: relative
+        border: 1px solid #8ca144
+        border-radius: 100%
+        margin-right: 8px
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+    &__phone
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 700
+    &__address
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 500
+    &__social
+        width: 90px
+        display: flex
+        justify-content: space-between
+        margin-bottom: 25px
+        img
+            width: 30px
+        

@@ -13,6 +13,15 @@ $(document).ready(function(){
         adaptiveHeight: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="../img/section_4/left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../img/section_4/right.png"></button>'
+    });
+    $('.feedback__inner').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 4000,
+        adaptiveHeight: false,
+        prevArrow: '<button type="button" class="slick-prev"><img src="../img/section_4/left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../img/section_4/right.png"></button>'
     });    
 });
 
