@@ -1,0 +1,99 @@
+@media (max-width: 1200px)
+    .promo
+        min-height: 715px
+        padding: 20px
+        &__title
+            font-size: 40px
+        &__subtitle
+            font-size: 18px
+            line-height: 30px
+        &__doctor
+            max-width: 525px
+            min-height: 670px
+            &_wrapper
+                &::before
+                    right: 340px
+                    top: 220px
+                &::after
+                    top: 611px
+    .button
+        width: 280px
+        height: 80px
+
+@media (max-width: 991px)
+    .promo
+        &__doctor
+            max-width: 60%
+            min-height: 70%
+            top: 10px
+            &_wrapper
+                &::before
+                    top: 250px
+                &::after
+                    top: 68vw
+        &__title
+            font-size: 30px
+        &__subtitle
+            width: 66%
+            font-size: 17px
+            line-height: 26px
+    .button
+        width: 250px
+        height: 70px
+        font-size: 14px
+        margin-top: 35px
+
+@media (max-width: 767px)
+    .promo
+        min-height: 610px
+        &__title
+            font-size: 36px
+            margin-top: 45px
+            &_sm
+                display: inline
+        &__subtitle
+            width: 66%
+            font-size: 14px
+            line-height: 23px
+        &__doctor
+            &_wrapper
+                &::before
+                    display: none
+                &::after
+                    display: none
+    .button
+        width: 215px
+        height: 60px
+        font-size: 13px
+        margin-left: -12px
+
+@media (max-width: 576px)
+    .promo
+        min-height: 530px
+        &__title
+            font-size: 6vw
+        &__subtitle
+            margin-top: calc(100% - 165px)
+            width: 100%
+            line-height: 18px
+            text-align: left
+            font-size: 13px
+        &__doctor
+            top: 0
+            min-width: 60%
+            min-height: 57%
+    .button
+        width: 180px
+        height: 50px
+        font-size: 11px
+        display: block
+        margin: 20px auto
+            
+
+
+
+
+
+
+
+    

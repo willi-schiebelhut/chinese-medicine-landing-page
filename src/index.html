@@ -6,70 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Традиционная Китайская медицина</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <section class="promo">
-        <div class="container">
-            <header class="header">
-                <a href="#" class="header__logo">
-                    <img src="icons/logo.png" alt="logo">
-                </a>
-                <!-- <nav> -->
-                <ul class="header__menu">
-                    <li class="header__menu_item">
-                        <a href="#" class="header__menu_link">Лечение</a>
-                    </li>
-                    <li class="header__menu_item">
-                        <a href="#" class="header__menu_link">Доктора</a>
-                    </li>
-                    <li class="header__menu_item">
-                        <a href="#" class="header__menu_link">Цены</a>
-                    </li>
-                    <li class="header__menu_item">
-                        <a href="#" class="header__menu_link">Отзывы</a>
-                    </li>
-                    <li class="header__menu_item">
-                        <a href="#" class="header__menu_link">Контакты</a>
-                    </li>
-                </ul>
-                <!-- </nav> -->
-
-                <!-- <div class="header__contacts">
-                    <div class="header__nav">
-                        <div class="header__round">
-                            <img src="icons/location.png" alt="location" class="header__geo">
-                        </div>
-                        <div class="header__address">г. Шымкент,<br>ул. Ж. Шанина 82/12</div>
-                    </div>
-                    <div class="header__call">
-                        <div class="header__round">
-                            <img src="icons/phone.png" alt="phone" class="header__tel">
-                        </div>
-                        <div class="header__feedback">
-                            <a href="tel:77024803925" class="header__phone">+7 (702) 480-39-25</a>
-                            <a href="" class="header__backcall">Заказать звонок</a>
-                        </div>
-                    </div>
-                </div> -->
-
-            </header>
-
-            <div class="promo__wrapper">
-                <div class="promo__text">
-                    <h1 class="promo__title">Традиционная китайская<br> медицина в Шымкенте</h1>
-                    <h2 class="promo__subtitle">Диагностика и лечение заболеваний традиционными<br>китайскими методами.
-                        Специалисты клиники — врачи<br><span class="sub">высшей категории</span> с опытом работы до
-                        <span class="sub">35 лет</span></h2>
-                </div>
-                <div class="promo__doctor_wrapper"></div>
-                    <img src="img/header/doctor.png" alt="doctor" class="promo__doctor">
-                </div>
-                <button class="button">записаться на приём</button>
+    <section class="promo" id="up">
+        
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <div class="container">
+                <nav>
+                    <header class="header">
+                        <a href="#" class="header__logo">
+                            <img src="icons/logo.png" alt="logo">
+                        </a>
+                        <ul class="header__menu">
+                            <li class="header__menu_item">
+                                <a href="#" class="header__menu_link">Лечение</a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="#" class="header__menu_link">Доктора</a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="#" class="header__menu_link">Цены</a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="#" class="header__menu_link">Отзывы</a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="#" class="header__menu_link">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="header__contacts">
+                            <div class="header__nav header__hiddensm">
+                                <div class="header__round">
+                                    <img src="icons/location.png" alt="location" class="header__geo">
+                                </div>
+                                <div class="header__address">г. Шымкент, <br> ул. Ж.Шанина 82/12</div>
+                            </div>
+                            <div class="header__call">
+                                <div class="header__round">
+                                    <img src="icons/phone.png" alt="phone" class="header__tel">
+                                </div>
+                                <div class="header__feedback">
+                                    <a href="tel:77024803925" class="header__phone">+7 (702) 480-39-25</a>
+                                    <a href="" class="header__backcall">Заказать звонок</a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </nav>
+        
+                    <div class="promo__wrapper">
+                        <div class="promo__text">
+                            <h1 class="promo__title">Традиционная<span class="promo__title_sm"><br></span> китайская<br> медицина<br class="promo__title_sm"> в Шымкенте</h1>
+                            <h2 class="promo__subtitle">Диагностика и лечение заболеваний традиционными<br>китайскими методами.
+                                Специалисты клиники — врачи<br><span class="sub">высшей категории</span> с опытом работы до
+                                <span class="sub">35 лет</span></h2>
+                        </div>
+                        <div class="promo__doctor_wrapper"></div>
+                            <img src="img/header/doctor.png" alt="doctor" class="promo__doctor">
+                        </div>
+                       <button data-modal="consultation" class="button">записаться на приём</button>
+            </div>
+            
     </section>
 
     <section class="about">
@@ -108,7 +112,7 @@
         </div>
     </section>
 
-    <section class="methods">
+    <!-- <section class="methods">
         <div class="container">
             <div class="methods__number">02</div>
             <h2 class="title">Методы лечения</h2>
@@ -134,7 +138,7 @@
                             <li class="methods__advantages">Выявляет причину болезни</li>
                             <li class="methods__advantages">На 100% безболезненно</li>
                         </ul>
-                        <button class="button_mini">записаться</button>
+                        <button data-modal="consultation" class="button_mini">записаться</button>
                     </div>
                 </div>
 
@@ -164,7 +168,7 @@
                             <li class="methods__advantages">Укрепляет иммунитет</li>
                             <li class="methods__advantages">Приводит в гармонию весь<br>организм</li>
                         </ul>
-                        <button class="button_mini">записаться</button>
+                        <button data-modal="consultation" class="button_mini">записаться</button>
                     </div>
                 </div>
 
@@ -196,7 +200,7 @@
                             <li class="methods__advantages">Снимает воспаление и боль</li>
                             <li class="methods__advantages">Наполняет теплом весь<br> организм</li>
                         </ul>
-                        <button class="button_mini">записаться</button>
+                        <button data-modal="consultation" class="button_mini">записаться</button>
                     </div>
                 </div>
 
@@ -228,15 +232,15 @@
                             <li class="methods__advantages">Для заболеваний сосудов</li>
                             <li class="methods__advantages">Для лечения грыж и<br> протрузий</li>
                         </ul>
-                        <button class="button_mini">записаться</button>
+                        <button data-modal="consultation" class="button_mini">записаться</button>
                     </div>
                 </div>
             </div>
 
         </div>
-    </section>
+    </section> -->
 
-    <section class="therapy">
+    <!-- <section class="therapy">
         <div class="container">
             <div class="therapy__number">03</div>
             <h2 class="title">Какие болезни мы лечим</h2>
@@ -308,11 +312,11 @@
                 </div>
             </div>
 
-            <button class="button_center">записаться на приём</button>
+            <button data-modal="consultation" class="button_center">записаться на приём</button>
         </div>
-    </section>
+    </section> -->
 
-    <section class="doctors">
+    <!-- <section class="doctors">
         <div class="container">
             <h2 class="title">Наши доктора</h2>
             <div class="doctors__number">04</div>
@@ -353,8 +357,8 @@
               </div>
         </div>
     </section>
-
-    <section class="herbs">
+ -->
+    <!-- <section class="herbs">
         <div class="container">
             <h2 class="title">Лечение травами</h2>
             <div class="herbs__number">05</div>
@@ -367,11 +371,11 @@
                     Animi possimus numquam dolore beatae a, nulla nemo commodi nihil id quia molestiae eveniet soluta quas asperiores ipsam necessitatibus! Corrupti reiciendis optio libero quo voluptatum nulla ratione aperiam autem eum.
                 </p>
             </div>
-            <button class="button_center">записаться на приём</button>
+            <button data-modal="consultation" class="button_center">записаться на приём</button>
         </div>
-    </section>
+    </section> -->
 
-    <section class="feedback">
+    <!-- <section class="feedback">
         <div class="container">
             <h2 class="title">Отзывы о клинике</h2>
             <div class="feedback__number">06</div>
@@ -415,9 +419,13 @@
               </div>
               <a href="#" class="feedback__link">Все отзывы</a>
         </div>
+    </section> -->
+
+    <section class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5cb2743d8a92c9cdd1cf108895e86cccf13244acb31e03326ace99d1eb2a31ce&amp;source=constructor" width="1140px" height="400" frameborder="0"></iframe>
     </section>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <a href="#" class="footer__logo">
@@ -467,12 +475,41 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <div class="overlay">
+       <div class="modal" id="consultation">
+           <div class="modal__close">
+            <div class="modal__multiply">&times;</div>
+           </div>
+           <div class="modal__title">Оставьте свои данные<br>
+            и мы свяжемся с вами!</div>
+           <form action="#" class="modal-form">
+               <div class="modal-form-name">
+                <input name="name" type="text" placeholder="Ваше имя">
+               </div>
+               <div class="modal-form-phone">
+                <input name="phone" placeholder="Ваш телефон">
+               </div>
+               <button class="button_submit">Отправить</button>
+           </form>
+       </div>
+
+       <div class="modal__thanks" id="thanks">
+        <div class="modal__title-thanks">Ваша заявка принята!<br>
+        Мы скоро вам перезвоним.</div>
+    </div> 
+    </div>
+    <a href="#" id="up" class="pageup">
+        <img src="icons/up.svg" alt="pageup">
+    </a>
+    
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="https://kit.fontawesome.com/66088687dd.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
