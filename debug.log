@@ -12,3 +12,19 @@
 [0702/220758.738:ERROR:exception_snapshot_win.cc(98)] thread ID 240248 not found in process
 [0702/220758.723:ERROR:process_reader_win.cc(123)] NtOpenThread: {ќтказано в доступе} ѕроцесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
 [0702/220758.738:ERROR:exception_snapshot_win.cc(98)] thread ID 270028 not found in process
+[0708/114101.191:ERROR:process_reader_win.cc(188)] ResumeThread: ѕараметр задан неверно. (0x57)
+[0708/114101.200:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(151)] SuspendThread: ќтказано в доступе. (0x5)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:process_reader_win.cc(123)] NtOpenThread: ”казан неверный код клиента. (0xc000000b)
+[0708/114101.204:ERROR:exception_snapshot_win.cc(98)] thread ID 10556 not found in process
+[0708/114101.204:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: ѕопытка доступа к процессу, выполн€ющему процедуру завершени€. (0xc000010a)

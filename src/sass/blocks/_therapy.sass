@@ -3,15 +3,16 @@
     background: url(../../img/section_3/therapy_bg.jpg) center (center / cover) no-repeat
     padding: 107px 72px 58px 72px
     position: relative
+    overflow: hidden
     &::before 
             content: ""
             display: block
             position: absolute
-            right: 0
+            right: -65px
             bottom: 0
             background: url(../../img/section_3/doctor.png) center (center / cover) no-repeat
-            width: 681px
-            height: 685px
+            width: 38vw
+            height: 38vw
             z-index: 2
     &__number
         position: absolute
@@ -35,6 +36,8 @@
         align-items: center
         margin-bottom: 0
         padding-left: 0
+        position: relative
+        z-index: 9
     &__tab
         color: #222225
         font-family: Montserrat
@@ -74,6 +77,8 @@
         &__img
             max-width: 417px
             max-height: 100%
+            object-fit: cover
+            border-radius: 15px
         &__text
             margin-left: 52px
         &__list

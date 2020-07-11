@@ -2,6 +2,8 @@
     min-height: 885px
     padding: 130px 21px 21px 21px
     position: relative
+    &__more
+        display: none
     &__number
         position: absolute
         left: 50%
@@ -45,6 +47,7 @@
         line-height: 22px
         margin-top: 16px
         font-style: italic
+        margin-bottom: 12px
     &__text
         color: #000000
         font-family: Montserrat
@@ -52,12 +55,8 @@
         font-weight: 400
         line-height: 22px
         text-align: left
-        p
-            margin-bottom: 0
-        &:nth-child(1)
-            margin-top: 44px
-        &:nth-child(2)
-            margin-top: 0
+    p
+        margin: 0
 .slick-prev
         position: absolute
         top: 50%
@@ -65,6 +64,7 @@
         left: -145px
         border: none
         background-color: #fff
+        cursor: pointer
         img
             width: 97px
             height: 97px
@@ -75,6 +75,7 @@
         right: -145px
         border: none
         background-color: #fff
+        cursor: pointer
         img
             width: 97px
             height: 97px

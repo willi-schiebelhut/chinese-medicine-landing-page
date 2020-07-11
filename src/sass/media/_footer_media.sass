@@ -1,0 +1,47 @@
+@media (max-width: 991px)
+    .footer
+        padding: 30px 20px 20px 20px
+        min-height: 110px
+        &__wrapper
+            justify-content: space-around
+        &__menu
+            display: none
+        &__social
+            margin-bottom: 0
+            order: 2
+        &__logo
+            display: none
+        &__contacts
+            display: flex
+        &__nav
+            margin-top: 0
+        &__call
+            margin-right: 25px
+        &__phone
+            font-size: 15px
+
+@media (max-width: 767px)
+    .footer
+        &__phone
+            font-size: 13px
+        &__backcall
+            margin-top: 5px
+        &__address
+            font-size: 13px
+
+@media (max-width: 576px)
+    .footer
+        padding: 15px
+        &__round
+            display: none
+        &__wrapper
+            flex-wrap: wrap
+            flex-direction: column
+        &__contacts
+            margin-right: 0
+            justify-content: space-between
+            margin-bottom: 12px
+            align-items: end
+        &__social
+            img
+                width: 25px

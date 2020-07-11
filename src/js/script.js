@@ -23,23 +23,87 @@ $(document).ready(function(){
           .closest('div.container').find('div.therapy__content').removeClass('therapy__content_active').eq($(this).index()).addClass('therapy__content_active');
       });
 
-    $('.doctors__inner').slick({
+    $('.doctors__inner, feedback__inner').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 4000,
-        adaptiveHeight: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="../img/section_4/left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../img/section_4/right.png"></button>'
+        nextArrow: '<button type="button" class="slick-next"><img src="../img/section_4/right.png"></button>',
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: false
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: true,
+                arrows: false
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: true,
+                arrows: false
+              }
+            }
+        ]    
     });
+
     $('.feedback__inner').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 4000,
-        adaptiveHeight: false,
+        adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="../img/section_4/left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../img/section_4/right.png"></button>'
+        nextArrow: '<button type="button" class="slick-next"><img src="../img/section_4/right.png"></button>',
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              infinite: true,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              infinite: true,
+              arrows: false
+            }
+          }
+      ]
     });
 
     //Modal
