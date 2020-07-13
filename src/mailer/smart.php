@@ -10,7 +10,7 @@ $mail->CharSet = 'utf-8';
 
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
+/* $mail->isSMTP();   */                                    // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = '8446252';                 // Наш логин
@@ -18,8 +18,8 @@ $mail->Password = '60anaper';                           // Наш пароль �
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('8446252@gmail.com', 'Pulse');   // От кого письмо 
-$mail->addAddress('8fdyl@wimsg.com');     // Add a recipient
+$mail->setFrom('8446252@gmail.com', 'Chinesemed');   // От кого письмо 
+$mail->addAddress('rafed74898@mailsecv.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

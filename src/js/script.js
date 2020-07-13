@@ -1,13 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.header__menu'),
-    menuItem = document.querySelectorAll('.header__menu_item'),
+    menuItem = document.querySelectorAll('.header__menu_link'),
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('hamburger_active');
         menu.classList.toggle('header__menu_active');
     });
-
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
@@ -149,12 +148,31 @@ $(document).ready(function(){
                 $('.pageup').fadeOut();
             }
         });
-
         $("a[href^='#']").click(function(){
             const _href = $(this).attr("href");
             $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            $('body').removeClass('lock');
             return false;
         });
+
+        $('form').submit(function(e) {
+          e.preventDefault();
+          $.ajax({
+              type: "POST",
+              url: "mailer/smart.php",
+              data: $(this).serialize()
+          }).done(function() {
+              $(this).find("input").val("");
+              $('#consultation').fadeOut('slow');
+              $('.overlay, #thanks').fadeIn('slow');
+              setTimeout(function() {
+                $('.overlay, #thanks').fadeOut('slow');
+              },2000);
+        
+              $('form').trigger('reset');
+          });
+          return false;
+      });      
 });
 
 
