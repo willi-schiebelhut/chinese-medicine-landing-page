@@ -9,20 +9,46 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
+            hamburger.classList.toggle('hamburger_active ');
             menu.classList.toggle('header__menu_active');
         });
     });
-});
 
-$(document).ready(function(){
-    $('ul.therapy__tabs').on('click', 'li:not(.therapy__tab_active)', function() {
-        $(this)
-          .addClass('therapy__tab_active').siblings().removeClass('therapy__tab_active')
-          .closest('div.container').find('div.therapy__content').removeClass('therapy__content_active').eq($(this).index()).addClass('therapy__content_active');
-      });
+//Табы
+const tabsButton = document.querySelectorAll('.therapy__tab'),
+      tabsContent = document.querySelectorAll('.therapy__content'),
+      tabsWrapper = document.querySelector('.therapy__tabs');
 
-    $('.doctors__inner, feedback__inner').slick({
+      function hideTabs() {
+        tabsContent.forEach(i => {
+          i.classList.add('hide', 'fade');
+          i.classList.remove('show');
+        });
+        tabsButton.forEach(i => {
+          i.classList.remove('therapy__tab_active');
+        });
+      }
+      function showTabs(i = 0) {
+        tabsContent[i].classList.add('show', 'fade');
+        tabsContent[i].classList.remove('hide');
+        tabsButton[i].classList.add('therapy__tab_active');
+
+      }
+      
+      tabsWrapper.addEventListener('click', (e) => {
+        const target = e.target;
+        if (target && target.classList.contains('therapy__tab')) {
+            tabsButton.forEach((item, i) => {
+                if (target == item) {
+                    hideTabs();
+                    showTabs(i);
+                }
+            });
+        }
+    });
+
+//Слайдер
+    $('.doctors__inner').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -112,7 +138,7 @@ $(document).ready(function(){
     $('.modal__close').on('click', function() {
         $('.overlay, #consultation'). fadeOut('fast');
     });
-    $('.button_mini').on('click', function(){
+    $('#form_call').on('click', function(){
         $('.overlay, #consultation'). fadeIn('slow');
     });
     
@@ -172,8 +198,24 @@ $(document).ready(function(){
               $('form').trigger('reset');
           });
           return false;
-      });      
-});
+      });
 
+
+    //   $(function(){
+    //     $('#but').click(function(){
+    //         var p = $('#quotes').children('.show');
+    //         var n = $(p).next();
+    //         if($(n).hasClass('quote')){
+    //             $(n).removeClass('none').addClass('show');
+    //         }
+    //         else{
+    //             var obj = $('#quotes').children('.quote');
+    //             $(obj[0]).addClass('show').removeClass('none');
+    //         }
+    //         $(p).removeClass('show').addClass('none');
+    //     });
+    // });
+
+  });
 
 

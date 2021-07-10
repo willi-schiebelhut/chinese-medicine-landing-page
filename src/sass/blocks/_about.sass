@@ -3,7 +3,7 @@ h2,h3,h4
     padding: 0
 .about
     padding: 116px 40px 40px 40px
-    min-height: 990px
+    min-height: 920px
     position: relative
     background: url(../../img/section_2/about_bg.png) center (center / cover) no-repeat
     &::before
@@ -16,6 +16,8 @@ h2,h3,h4
         height: 409px
         background: url(../../img/section_2/rock.png) center (center / cover) no-repeat
         z-index: 0
+    &-course
+        min-height: auto
     &__caption
         margin-top: 55px
         margin-bottom: 43px
@@ -25,6 +27,13 @@ h2,h3,h4
         font-weight: 700
         line-height: 24px
         text-align: center
+    &__title
+        font-family: Montserrat
+        text-align: center
+        font-size: 20px
+        font-weight: 700
+        line-height: 22px
+        margin-top: 18px
     &__wrapper
         width: 100%
         display: flex
@@ -39,10 +48,15 @@ h2,h3,h4
         border: 1px solid rgba(192, 192, 192, 0.2)
         position: relative
         padding: 60px 20px 20px 20px
+        transition: .3s all
         &:hover
             box-shadow: 0px 15px 15px 0px rgba(23, 29, 26, 0.1)
+            transition: .3s all
         &:nth-child(3) 
             margin-right: 0
+        &-course
+            min-height: auto
+            z-index: 99
     &__round
         width: 123px
         height: 123px
@@ -69,6 +83,8 @@ h2,h3,h4
         &_bold
             font-family: Montserrat
             font-weight: 700
+        &-course
+            text-align: center
     &__number
         position: absolute
         top: -90px

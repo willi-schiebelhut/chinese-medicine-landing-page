@@ -1,0 +1,40 @@
+.articles
+    padding-bottom: 120px
+    padding-top: 40px
+.article
+    &__list
+        list-style: none
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+        margin-bottom: 120px
+    &__link
+        text-decoration: none
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        padding: 20px
+    &__item
+        display: flex
+    &__image
+        width: 100%
+        img
+            width: 100%
+            object-fit: cover
+    &__text
+        padding-bottom: 25px
+    ul
+        padding-left: 0
+.pagination
+    &__block
+        display: flex
+        justify-content: center
+        align-items: center
+    &__link
+        margin-left: 20px
+        margin-right: 20px
+        text-decoration: none
+        &-active
+            color: #849e2f
+            font-size: 30px
+
+        

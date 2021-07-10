@@ -14,30 +14,18 @@
             width: 38vw
             height: 38vw
             z-index: 2
-    &__number
-        position: absolute
-        left: 50%
-        right: 50%
-        transform: translateX(-50%)
-        color: #ffffff
-        font-family: Montserrat
-        font-size: 209px
-        font-weight: 700
-        line-height: 252.78px
-        display: flex
-        justify-content: center
-        z-index: 1
-        top: -15%
     &__tabs
-        margin-top: 45px
+        max-width: 100%
         list-style-type: none
         display: flex
         justify-content: center
         align-items: center
-        margin-bottom: 0
+        margin-bottom: 20px
+        margin-top: 25px
         padding-left: 0
         position: relative
         z-index: 9
+        flex-wrap: wrap
     &__tab
         color: #222225
         font-family: Montserrat
@@ -45,20 +33,21 @@
         font-weight: 700
         text-align: center
         text-transform: uppercase
-        margin: 0 51px
         cursor: pointer
         transition: 0.4s all
+        padding-bottom: 15px
+        padding-left: 15px
+        padding-right: 15px
         &_active
             font-family: "Montserrat"
             font-weight: 700
-            letter-spacing: 0.9px
             color: #8ca144
             &::after
                 content: ""
                 display: block
                 width: 100%
-                height: 3px
-                margin-top: 14px
+                height: 2px
+                margin-top: 0
                 background-color: #8ca144
                 transition: 0.4s all
     &__content
@@ -68,23 +57,31 @@
         &_active
             display: flex
     &-item
-        max-width: 1031px
-        min-height: 100%
         border-radius: 20px
+        max-width: 1031px
+        height: 400px
         background-color: #ffffff
-        padding: 43px 142px 44px 63px
+        padding: 44px
         display: flex
+        align-items: center
         &__img
-            max-width: 417px
-            max-height: 100%
+            max-width: 100%
+            height: 100%
             object-fit: cover
             border-radius: 15px
+            display: flex
+            align-items: center
+            &-wrapper
+                width: 417px
+                height: 300px
+                display: flex
+                align-items: center
+                display: block
         &__text
-            margin-left: 52px
+            margin-left: 15px
         &__list
             list-style-type: none
             margin-bottom: 0
-            padding-left: 0
         &__subtitle
             color: #000000
             font-family: Montserrat
@@ -92,6 +89,7 @@
             font-weight: 700
             line-height: 30px
         &__points
+            position: relative
             color: #000000
             font-family: Montserrat
             font-size: 14px
@@ -100,13 +98,105 @@
             margin-top: 30px
             display: flex
             align-items: center
+            &:first-child
+                margin-top: 0
             &::before
                 content: ""
                 display: block
-                background: url(../../icons/methods/dots.png) center (center / cover) no-repeat
+                position: absolute
+                left: -30px
+                background-color: #849e2f
+                border-radius: 100%
                 width: 15px
                 height: 15px
                 margin-right: 16px
+    &__other
+            color: #000000
+            font-family: Montserrat
+            font-size: 14px
+            font-weight: 500
+            line-height: 22px
+            margin-top: 30px
+            text-align: center
+.hide
+    display: none
+.show
+    display: flex
+.fade 
+    animation-name: fade
+    animation-duration: 1.5s
 
+@keyframes fade 
+    from 
+        opacity: 0.1
+    
+    to 
+        opacity: 1
+    
+.accordion
+    display: none
+    flex-wrap: wrap
+    justify-content: space-between
+    &_item
+        align-items: center
+        position: relative
+        width: 100%
+        margin-bottom: 20px
+        padding: 10px
+        position: relative
+        border: none
 
-                        
+        // &:before
+        //     content: ''
+        //     position: absolute
+        //     display: block
+        //     width: 6px
+        //     height: 65px
+        //     background-color: #8ca144
+        &__input
+            position: absolute
+            top: 0
+            left: 0
+            opacity: 0
+        &__trigger
+            display: flex
+            align-items: center
+            padding: 20px
+            color: #232932
+            font-size: 20px
+            font-family: Montserrat
+            font-weight: 700
+            line-height: 20px
+            text-transform: uppercase
+            border-radius: 5px
+            transition: .5s all
+            display: flex
+
+            &::before
+                content: ''
+                background: url('../icons/shevron-right.svg') center (center/cover) no-repeat
+                display: block
+                width: 15px
+                height: 15px
+                transition: .3s all
+                margin-right: 7px
+        &__content
+                display: none
+                padding: 20px
+                border-top: none
+                height: auto
+                z-index: 99
+                font-family: Montserrat
+                background-color: #ffffff
+                font-size: 16px
+                font-weight: 500
+                line-height: 22px
+                transition: .5s all
+                margin-top: 10px
+    .accordion_item__input:checked ~ .accordion_item__trigger
+        &::before
+            transform: rotate(90deg)
+    .accordion_item__input:checked ~ .accordion_item__content
+        display: flex
+        justify-content: center
+        align-items: center                   

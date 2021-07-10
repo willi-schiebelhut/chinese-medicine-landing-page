@@ -1,3 +1,9 @@
+@media (min-width: 2000px)
+    .therapy
+        &::before
+            width: 27vw
+            height: 27vw
+
 @media (max-width: 1200px)
     .therapy
         overflow: hidden
@@ -10,8 +16,6 @@
             padding: 40px
         &__content
             margin-top: 35px
-        &__tab
-            margin: 0 25px
 
 @media (max-width: 991px)
     .therapy
@@ -24,19 +28,25 @@
             font-size: 175px
 
 @media (max-width: 767px)
+    .accordion
+        display: flex
+        margin-top: 20px
+        &_item
+            margin-bottom: 13px
+            &__trigger
+                padding: 3px
     .therapy
         &__number
             top: -100px
             font-size: 130px
         &__tabs
-            flex-direction: column
-            margin-top: 45px
+            display: none
         &__tab
-            margin-bottom: 25px
-            font-size: 13px
+            font-size: 12px
         &-item
-            display: block
+            display: none
             height: 70%
+            padding: 20px
             &__subtitle
                 text-align: center
                 margin-top: 15px
@@ -48,19 +58,31 @@
                 flex-wrap: wrap
             &__points
                 margin-right: 20px
-                margin-top: 20px
+                margin-top: 10px
                 font-weight: 500
+                &:first-child
+                    margin-top: auto
+                &::before
+                    display: none
             &__img
                 display: block
-                margin: 0 auto
-                height: 50%
+                &-wrapper
+                    display: block
+                    margin: 0 auto
         &__content
             margin-top: 0
 
 @media (max-width: 576px)
+    .accordion
+        display: flex
+        margin-top: 20px
+        &_item
+            margin-bottom: 13px
+            &__trigger
+                font-size: 15px
     .therapy
-        padding: 30px 15px
-        min-height: 565px
+        padding: 35px 10px 40px 10px
+        min-height: 515px
         &::before
             display: none
         &__number
@@ -71,6 +93,8 @@
         &-item
             padding: 20px
             height: 70%
+            width: 100%
+            border: 1px solid #8ca144
             &__text
                 margin-left: 0
             &__subtitle
@@ -79,12 +103,37 @@
                 font-size: 13px
                 margin-top: 7px
                 font-weight: 500
+                &::before
+                    display: block
+                    width: 8px
+                    height: 8px
+                    margin-right: 8px
             &__img
                 display: none
+                &-wrapper
+                    display: none
             &__list
+                display: flex
                 margin-top: 0
                 justify-content: start
+                flex-direction: column
         &__tab
-            margin-bottom: 15px
-            
+            margin-bottom: 0
+            font-size: 12px
+            padding-top: 5px
+            padding-left: 10px
+            padding-right: 10px
+        &__tabs
+            margin-top: 15px
+            flex-direction: row
+@media (max-width: 425px)
+    .accordion
+        display: flex
+        margin-top: 20px
+        &_item
+            margin-bottom: 0
+            padding: 8px
+            &__trigger
+                font-size: 15px
+
 

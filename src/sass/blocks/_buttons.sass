@@ -11,20 +11,34 @@
     text-transform: uppercase
     border: none
     cursor: pointer
+    transition: .3s all
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
     &_center
         margin-top: 46px
-        width: 336px
-        height: 88px
-        border-radius: 44px
-        box-shadow: 5px 13px 32px rgba(137, 159, 60, 0.49)
+        display: flex
+    &_article
+        width: 100%
+        height: 50px
+        box-shadow: none
+        border-radius: 0
+        font-weight: 400
         background-color: #8ca144
         font-family: Montserrat
         color: #ffffff
         font-size: 16px
-        font-weight: 700
+        font-weight: 500
         text-transform: uppercase
         border: none
         cursor: pointer
+        transition: .3s all
+        &:hover
+            background-color: #fff
+            color: #849e2f
+            transition: .3s all
+            border: 1px solid #849e2f
     &_mini
         width: 180px
         height: 55px
@@ -37,9 +51,18 @@
         text-transform: uppercase
         border: none
         cursor: pointer
-        position: absolute
-        right: 30px
-        bottom: 32px
+        position: relative
+        right: 0px
+        bottom: 0
+        transition: .3s all
+        margin-top: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        &:hover
+            transform: scale(1.04)
+            transition: .3s all
     &_submit
         width: 230px
         height: 70px
@@ -54,4 +77,10 @@
         text-transform: uppercase
         margin-top: 40px
         cursor: pointer
-            
+        transition: .3s all
+        &:hover
+            transform: scale(1.02)
+            transition: .3s all    
+    &:hover
+        transform: scale(1.04)
+        transition: .3s all     

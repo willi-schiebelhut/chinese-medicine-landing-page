@@ -1,0 +1,182 @@
+.courses__link-programm
+    display: flex
+.programm
+    background: url('../img/programm.jpeg') center (center / cover) no-repeat
+    min-height: 1079px
+    padding: 195px 15px 30px 15px
+    &__left
+        max-width: 462px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__descrption
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 18px
+        font-weight: 500
+    &__list
+        list-style-type: none
+        padding-left: 0
+        li
+            display: flex
+            align-items: center
+            margin-bottom: 30px
+            span
+                font-weight: 900
+                margin-left: 5px
+            &:nth-child(3)
+                margin-bottom: 70px
+            &::before
+                content: ""
+                display: block
+                width: 16px
+                height: 16px
+                background-color: #b6ce64
+                border-radius: 100%
+                margin-right: 15px
+    &__right
+        max-width: 645px
+        min-height: 755px
+        justify-content: space-between
+        display: flex
+        flex-direction: column
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__roadmap
+        display: flex
+        align-items: center
+        &-button
+            display: block
+            width: 165px
+            height: 55px
+            box-shadow: 0 16px 65px rgba(0, 0, 0, 0.29)
+            border-radius: 28px
+            background-color: #ffffff
+            border: none
+            margin-right: 37px
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 700
+            color: #8ca144
+            text-transform: uppercase
+            position: relative
+            span
+                color: #000
+                font-weight: 700
+                font-family: Montserrat
+                text-transform: uppercase
+            &::after
+                content: ""
+                display: block
+                width: 27px
+                height: 27px
+                background: url('../icons/down-arrow.svg') center (center / cover) no-repeat
+                position: absolute
+                bottom: -45px
+                left: 50%
+                transform: translateX(-50%)
+                &:last-child
+                    display: none
+        &-text
+            width: 440px
+        &-title
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 22px
+            font-weight: 700
+            line-height: 30px
+            span
+                font-weight: 500
+        &-descr
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 14px
+            font-weight: 400
+            line-height: 22px
+            margin-top: 10px
+    &__descr
+        display: flex
+
+@media (max-width: 1200px)
+    .courses__link-programm
+        margin: 25px auto
+    .title-programm
+        text-align: center
+    .programm
+        padding-top: 150px
+        &__wrapper
+            flex-direction: column
+        &__left
+            max-width: 100%
+        &__right
+            max-width: 100%
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+            align-content: space-evenly
+        &__roadmap
+            width: 45%
+        &__descrption
+            text-align: center
+        &__list
+            margin: 50px auto 10px
+
+@media (max-width: 992px)
+    .programm
+        &__roadmap
+            width: 100%
+            justify-content: center
+
+@media (max-width: 576px)
+    .courses__link-programm
+        width: 220px
+        height: 70px
+    .programm
+        &__descrption
+            font-size: 15px
+        &__right
+            margin-top: 20px
+        &__roadmap
+            margin-bottom: 15px
+            &-title
+                font-size: 20px
+            &-button
+                height: 45px
+                font-size: 14px
+
+@media (max-width: 425px)
+    .programm
+        &__descrption
+            &-li
+                font-weight: 700
+                span
+                    margin-top: 5px
+        &__roadmap
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &-text
+                width: 90%
+                margin-top: 10px
+                margin-bottom: 10px
+            &-title
+                text-align: center
+            &-descr
+                text-align: center
+            &-button
+                margin-right: 0
+                background-color: transparent
+                box-shadow: none
+                color: #fff
+                border: 1px solid #fff
+                span
+                    color: #fff
+                    
+                &::after
+                    display: none
+        &__list
+            li
+                flex-direction: column
+                &::before
+                    display: none

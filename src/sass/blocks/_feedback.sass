@@ -1,22 +1,8 @@
 .feedback
-    min-height: 810px
-    padding: 97px 21px 60px 21px
-    &__number
-        position: absolute
-        left: 50%
-        right: 50%
-        transform: translateX(-50%)
-        color: #f5f4e9
-        font-family: Montserrat
-        font-size: 209px
-        font-weight: 700
-        line-height: 252.78px
-        display: flex
-        justify-content: center
-        z-index: 2
-        top: -15%
+    min-height: 760px
+    padding: 40px 21px 60px 21px
     &__inner
-        margin: 77px auto 0
+        margin: 30px auto 0
         max-width: 665px
         text-align: center
     &__round
@@ -62,6 +48,10 @@
         color: #8ca144
         text-decoration: none
         margin-top: 30px
+        &:hover
+            text-decoration: underline
+    &__more
+        display: none
 .slick-prev
         position: absolute
         top: 50%
@@ -82,3 +72,5 @@
         img
             width: 97px
             height: 97px
+.none
+    display: none

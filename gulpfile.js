@@ -9,9 +9,7 @@ gulp.task('server', function() {
 
     browserSync({
         server: {
-            baseDir: "src",
-            open: "external",
-            tunnel: true
+            baseDir: "src"
         }
     });
 

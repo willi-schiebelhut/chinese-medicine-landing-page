@@ -1,0 +1,325 @@
+.courses
+        padding: 20px 40px
+        min-height: 900px
+        background: url('../img/header/main_bg.png') center (center / cover) no-repeat
+        &__subtitle
+            margin-top: 12px
+        &__wrapper
+            display: flex
+            margin-top: 50px
+            justify-content: space-between
+        &__left
+            display: flex
+            flex-direction: column
+            max-width: 635px
+        &__right
+            max-width: 470px
+            margin-left: 20px
+        &__form
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 100%
+            min-height: 664px
+            border-radius: 20px
+            border: 6px solid #f5f4e9
+            background-color: #ffffff
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                right: 0
+                display: block
+                width: 134px
+                height: 167px
+                bottom: -150px
+                background: url('../img/header/leaves_right.png') center (center / cover) no-repeat
+                z-index: 2
+
+        &__video
+            width: 100%
+            object-fit: cover
+            border-top-right-radius: 13px
+            border-top-left-radius: 13px
+        &__contacts
+            padding: 15px 35px 30px 35px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__person
+            &-wrapper
+                width: 100%
+        &__discount
+            display: flex
+            margin-top: 7px
+            align-items: center
+            div
+                position: relative
+                display: flex
+                flex-direction: row
+                align-items: center
+            &-title
+                font-family: Montserrat
+                font-size: 14px
+                font-weight: 500
+                line-height: 17px
+                span
+                    color: #000000
+                    font-family: Montserrat
+                    font-size: 16px
+                    font-weight: 700
+            a
+                width: 30px
+                height: 30px
+                img
+                    width: 100%
+                    height: 100%
+        &__sale
+            display: flex
+            margin-top: 67px
+            justify-content: space-between
+            align-items: center
+        &__price
+            &-old
+                color: #bfbfbf
+                font-family: Montserrat
+                font-size: 18px
+                font-weight: 700
+                text-align: left
+                text-transform: uppercase
+            &-new
+                color: #8ca144
+                font-family: Montserrat
+                font-size: 42px
+                font-weight: 700
+                margin-top: 13px
+        &__timer
+            display: flex
+            flex-direction: column
+            &-title
+                color: #000000
+                font-family: Montserrat
+                font-size: 18px
+                font-weight: 700
+            &-blocks
+                display: flex
+                margin-top: 7px
+            &-block
+                width: 76px
+                height: 71px
+                border-radius: 8px
+                border: 6px solid #f5f4e9
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                color: #000000
+                margin-right: 7px
+                &:nth-child(4)
+                    margin-right: 0
+                p
+                    color: #000000
+                    font-family: Montserrat
+                    font-size: 30px
+                    font-weight: 700
+                span
+                    position: absolute
+                    bottom: -30px
+                    color: #bfbfbf
+                    font-family: Montserrat
+                    font-size: 18px
+                    font-weight: 700
+        &__link
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 70px
+            width: 298px
+            height: 87px
+            border-radius: 44px
+            border: 8px solid #8ca144
+            color: #000000
+            background-color: #fff
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            &-about
+                border: 8px solid #ffffff
+                background-color: #8ca144
+                color: #fff
+#name, #phone, #select, #person
+    width: 100%
+    height: 69px
+    border: 1px solid #b7b7b7
+    color: #acacac
+    font-family: Montserrat
+    font-size: 16px
+    font-weight: 500
+    padding: 24px 24px 24px 35px
+    margin-top: 5px
+    outline: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+.plus
+    position: absolute
+    right: 15px
+.minus
+    position: absolute
+    left: 15px
+#person
+    text-align: center
+    font-size: 23px
+    padding-left: 24px
+    
+#name
+.input__wrap
+    width: 100%
+    position: relative
+    &:nth-child(1)
+        &::before
+            content: ""
+            background: url('../icons/user.svg') center (center / cover) no-repeat
+            width: 15px
+            height: 15px
+            left: 15px
+            display: block
+            position: absolute
+            top: 31px
+    &:nth-child(2)
+        &::before
+            content: ""
+            background: url('../icons/students.svg') center (center / cover) no-repeat
+            width: 15px
+            height: 15px
+            left: 15px
+            display: block
+            position: absolute
+            top: 31px   
+    &:nth-child(3)
+        &::before
+            content: ""
+            background: url('../icons/call.svg') center (center / cover) no-repeat
+            width: 15px
+            height: 15px
+            left: 15px
+            display: block
+            position: absolute
+            top: 31px
+
+//Media
+
+@media (max-width: 1200px)
+    .promo__title-course
+        margin-top: 50px
+    .courses
+        &__subtitle
+            font-size: 18px
+            line-height: 30px
+        &__sale
+            flex-direction: column-reverse
+            align-items: center
+        &__price
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 60px
+            &-new
+                margin-top: 0
+        &__link
+            display: none
+
+@media (max-width: 991px)
+    .promo__subtitle-course
+        width: 100%
+    .courses
+        &__subtitle
+            width: 100%
+        padding: 20px
+        &__form
+            min-height: auto
+            &::after
+                display: none
+        &__person
+            &-wrapper
+                width: 60%
+        &__timer
+            &-title
+                font-size: 17px
+            &-blocks
+                justify-content: space-around
+            &-block
+                width: 60px
+                height: 60px
+                span
+                    font-size: 15px
+        &__contacts
+            padding-right: 10px
+            padding-left: 10px
+        &__discount
+            flex-direction: column
+            &-title
+                text-align: center
+@media (max-width: 767px)
+    .promo__title-course
+        text-align: center
+    .input__wrap
+        margin-top: 10px
+    .courses
+        &__wrapper
+            flex-direction: column
+            align-items: center
+            margin-top: 0
+        &__subtitle
+            text-align: center
+        &__right
+            margin-left: 0
+            margin-top: 15px
+            width: 70%
+        &__video
+            display: none
+        &__timer
+            &-blocks
+                margin-top: 15px
+        &__discount
+            order: -1
+            width: 100%
+            &-title
+                font-weight: 700
+                font-size: 16px
+                span
+                    font-size: 14px
+                    font-weight: 400
+        &__person
+            &-wrapper
+                width: 60%
+                margin-top: 10px
+        &__price
+            margin-top: 45px
+
+@media (max-width: 576px)
+    .courses
+        padding: 5px 5px 20px 5px
+        &__subtitle
+            font-size: 15px
+        &__right
+            width: 100%
+        &__person
+            &-wrapper
+                width: 100%
+        &__sale
+            margin-top: 40px
+
+@media (max-width: 425px)
+    .promo__title-course
+        font-size: 7vw
+    .courses
+        &__subtitle
+            line-height: 25px
+        &__timer
+            &-title
+                text-align: center
+            &-block
+                p
+                    font-size: 25px
